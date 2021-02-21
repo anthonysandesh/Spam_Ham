@@ -1,7 +1,7 @@
 import streamlit as st
 st.title('Spam Ham Classification')
 import pandas as pd
-df = pd.read_table('span.tsv')
+df = pd.read_table('spam.tsv')
 x = df.iloc[:,1].values
 y = df.iloc[:,0].values
 from sklearn.pipeline import Pipeline
